@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.HoverslugAdventures.CSharp.Editor", "UnityVS.HoverslugAdventures.CSharp.Editor.csproj", "{5C865024-6849-D076-7436-FFA8B0B6A157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.HoverslugAdventures.CSharp.Plugins", "UnityVS.HoverslugAdventures.CSharp.Plugins.csproj", "{271E42C1-D5D5-0054-B635-37844963012C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.HoverslugAdventures.CSharp", "UnityVS.HoverslugAdventures.CSharp.csproj", "{CCBE38FB-4852-F078-1B54-C53683C46658}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C865024-6849-D076-7436-FFA8B0B6A157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C865024-6849-D076-7436-FFA8B0B6A157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C865024-6849-D076-7436-FFA8B0B6A157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C865024-6849-D076-7436-FFA8B0B6A157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271E42C1-D5D5-0054-B635-37844963012C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271E42C1-D5D5-0054-B635-37844963012C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271E42C1-D5D5-0054-B635-37844963012C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271E42C1-D5D5-0054-B635-37844963012C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBE38FB-4852-F078-1B54-C53683C46658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBE38FB-4852-F078-1B54-C53683C46658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBE38FB-4852-F078-1B54-C53683C46658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBE38FB-4852-F078-1B54-C53683C46658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

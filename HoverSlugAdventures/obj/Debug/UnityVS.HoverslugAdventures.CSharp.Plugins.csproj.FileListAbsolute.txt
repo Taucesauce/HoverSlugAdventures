@@ -1,0 +1,13 @@
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\obj\Debug\UnityVS.HoverslugAdventures.CSharp.Plugins.csprojResolveAssemblyReference.cache
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\Users\Justin\Documents\College Stuff\UnityProjects\HoverSlugAdventures\HoverslugAdventures\obj\Debug\Assembly-CSharp-firstpass.pdb
