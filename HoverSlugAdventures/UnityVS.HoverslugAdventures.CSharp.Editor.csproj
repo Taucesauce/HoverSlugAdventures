@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5C865024-6849-D076-7436-FFA8B0B6A157}</ProjectGuid>
+    <ProjectGuid>{E4EE043A-78BA-9216-A282-4DF1F4A9B9C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace></RootNamespace>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -15,6 +15,9 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.0.1f1</UnityVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -94,21 +97,15 @@
     <Reference Include="UnityVS.VersionSpecific">
       <HintPath>Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.HoverslugAdventures.CSharp.Plugins.csproj">
-      <Project>{271E42C1-D5D5-0054-B635-37844963012C}</Project>
-      <Name>UnityVS.HoverslugAdventures.CSharp.Plugins</Name>
+    <ProjectReference Include="UnityVS.HoverSlugAdventures.CSharp.Plugins.csproj">
+      <Project>{E8913A75-5933-22FB-7DE4-18FF9B485AD3}</Project>
+      <Name>UnityVS.HoverSlugAdventures.CSharp.Plugins</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityVS.HoverslugAdventures.CSharp.csproj">
-      <Project>{CCBE38FB-4852-F078-1B54-C53683C46658}</Project>
-      <Name>UnityVS.HoverslugAdventures.CSharp</Name>
+    <ProjectReference Include="UnityVS.HoverSlugAdventures.CSharp.csproj">
+      <Project>{D0E08F8E-3CEB-2141-DF4F-BEB0F7A9D3BD}</Project>
+      <Name>UnityVS.HoverSlugAdventures.CSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +123,8 @@
     <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
@@ -213,11 +212,6 @@
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-    <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
-    <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
-    <None Include="Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll" />
-    <None Include="D:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll" />
-    <None Include="D:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

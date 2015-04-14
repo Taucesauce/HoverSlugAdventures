@@ -32,6 +32,14 @@ namespace Assets.Scripts.ObjectScripts
         void Update ()
         {
             MovesDisplay.text = moves.ToString();
+            if(moves < 3)
+            {
+                MovesDisplay.color = Color.red;
+            }
+            else
+            {
+                MovesDisplay.color = Color.cyan;
+            }
             currentTile = movePlayer(input.checkInput());
             transform.position = currentTile.TileCenter;
         }

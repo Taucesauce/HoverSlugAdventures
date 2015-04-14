@@ -7,7 +7,7 @@ namespace Assets.Scripts.ObjectScripts
         public Player player;
         public Room nextRoom;
         public Camera camera;
-        private float cameraSpeed = 35;
+        private float cameraSpeed = 30;
         private float startTime;
         private float cameraDistance;
         private bool triggered;
@@ -23,6 +23,7 @@ namespace Assets.Scripts.ObjectScripts
 	
         // Update is called once per frame
         void Update () {
+
             if (triggered)
             {
                 float distCovered = (Time.time - startTime)*cameraSpeed;
