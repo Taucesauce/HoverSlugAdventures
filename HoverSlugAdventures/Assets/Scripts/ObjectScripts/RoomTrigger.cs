@@ -37,8 +37,11 @@ namespace Assets.Scripts.ObjectScripts
         {
             triggered = true;
             startTime = Time.time;
-            player.switchRoom(nextRoom);
-            player.AddMoves(nextRoom.movesAllowed);
+            if (player.CurrentRoom != nextRoom)
+            {
+                player.switchRoom(nextRoom);
+                player.AddMoves(nextRoom.movesAllowed);
+            }
         }
     }
 }
