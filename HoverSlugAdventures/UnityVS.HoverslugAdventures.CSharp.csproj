@@ -63,6 +63,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ObjectScripts\Canvas.cs" />
     <Compile Include="Assets\Scripts\ObjectScripts\Grid.cs" />
     <Compile Include="Assets\Scripts\ObjectScripts\Player.cs" />
     <Compile Include="Assets\Scripts\ObjectScripts\Room.cs" />

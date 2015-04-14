@@ -7,7 +7,7 @@ namespace Assets.Scripts.ObjectScripts
 {
     public class Player : MonoBehaviour
     {
-        public enum PlayerDirection { Left = 1, Right = 2, Up = 3, Down = 4 }
+        public enum PlayerDirection { Left = 1, Right = 2, Up = 3, Down = 4, Restart = 5 }
 
         //Player Variables:
         private int moves;
@@ -42,6 +42,14 @@ namespace Assets.Scripts.ObjectScripts
             }
             currentTile = movePlayer(input.checkInput());
             transform.position = currentTile.TileCenter;
+            if(moves <= 0)
+            {
+                if(input.checkInput() == PlayerDirection.Restart)
+                {
+                    switchRoom(CurrentRoom);
+                    moves = CurrentRoom.movesAllowed;
+                }
+            }
         }
 
         public void switchRoom(Room nextRoom)

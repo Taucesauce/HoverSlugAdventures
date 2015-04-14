@@ -26,6 +26,11 @@ namespace Assets.Scripts.Utilities
                 return Player.PlayerDirection.Right;
             }
 
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                return Player.PlayerDirection.Restart;
+            }
+
             return 0;
         }
     }
