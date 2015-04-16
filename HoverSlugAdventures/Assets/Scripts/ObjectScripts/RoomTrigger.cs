@@ -31,6 +31,10 @@ namespace Assets.Scripts.ObjectScripts
                 camera.transform.position = Vector3.Lerp(previousCameraLocation.position,
                     nextCameraLocation.position, fracJourney);
             }
+            if (camera.transform.position == nextCameraLocation.position)
+            {
+                triggered = false;
+            }
         }
 
         void OnTriggerEnter(Collider playerCollider)
