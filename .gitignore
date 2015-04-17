@@ -3,6 +3,8 @@ HoverSlugAdventures/Library
 HoverSlugAdventures/bin
 HoverSlugAdventures/obj
 HoverSlugAdventures/Assembly-CSharp.csproj
+HoverSlugAdventures/Assembly-CSharp-firstpass-vs.csproj
+HoverSlugAdventures/Assembly-CSharp-firstpass.csproj
 HoverSlugAdventures/Assembly-CSharp-Editor.csproj
 HoverSlugAdventures/Assembly-CSharp-Editor-vs.csproj
 HoverSlugAdventures/Assembly-CSharp-vs.csproj
