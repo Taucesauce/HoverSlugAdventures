@@ -17,7 +17,7 @@ namespace Assets.Scripts.ObjectScripts
         {
             floorLayout = gameObject.GetComponentInChildren<Grid>();
             startingTile = gameObject.AddComponent<Tile>();
-            startingTile = floorLayout.Layout[startX, startY];
+            startingTile = floorLayout.FloorTiles[startX, startY];
         }
 	
         // Update is called once per frame

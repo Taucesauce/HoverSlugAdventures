@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Assets.Scripts.Interfaces;
 using Assets.Scripts.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,37 +13,34 @@ namespace Assets.Scripts.ObjectScripts
 
         //Player Variables:
         private int moves;
-        public Text MovesDisplay;
-        public Room CurrentRoom;
+        public NewRoom CurrentRoom;
         private Tile currentTile;
-        private const int tileOffset = 1;
+        private Tile tempTile;
         private InputHandler input;
-        public Tile CurrentTile { get { return currentTile; } }
 
+        void Awake()
+        {
+            input = new InputHandler();
+        }
         // Use this for initialization
         void Start ()
         {
-            input = new InputHandler();
-            currentTile = gameObject.AddComponent<Tile>();
             currentTile = CurrentRoom.StartingTile;
             moves = CurrentRoom.movesAllowed;
-            MovesDisplay.text = moves.ToString();
         }
 	
         // Update is called once per frame
         void Update ()
         {
-            MovesDisplay.text = moves.ToString();
-            if(moves < 3)
+            if (currentTile == null)
             {
-                MovesDisplay.color = Color.red;
+                currentTile = CurrentRoom.StartingTile;
             }
             else
             {
-                MovesDisplay.color = Color.cyan;
+                currentTile = movePlayer(input.checkInput());
             }
-            currentTile = movePlayer(input.checkInput());
-            transform.position = currentTile.TileCenter;
+            transform.position = currentTile.TilePos;
             if(moves <= 0)
             {
                 if(input.checkInput() == PlayerDirection.Restart)
@@ -52,11 +51,11 @@ namespace Assets.Scripts.ObjectScripts
             }
         }
 
-        public void switchRoom(Room nextRoom)
+        public void switchRoom(NewRoom nextRoom)
         {
             CurrentRoom = nextRoom;
             currentTile = nextRoom.StartingTile;
-            transform.position = currentTile.TileCenter;
+            transform.position = currentTile.TilePos;
         }
 
         public void AddMoves(int numMoves)
@@ -68,64 +67,29 @@ namespace Assets.Scripts.ObjectScripts
         {
             if (moves > 0)
             {
-                switch (direction)
-                {
-                    case PlayerDirection.Left:
-                        if (checkTile((int) currentTile.TileIndex.x - 1,
-                            (int) currentTile.TileIndex.y))
-                        {
-                            currentTile = CurrentRoom.floorLayout.Layout[(int) currentTile.TileIndex.x - 1,
-                                (int) currentTile.TileIndex.y];
-                            moves--;
-                        }
-                        break;
-                    case PlayerDirection.Right:
-                        if (checkTile((int)currentTile.TileIndex.x + 1,
-                            (int)currentTile.TileIndex.y))
-                        {
-                            currentTile = CurrentRoom.floorLayout.Layout[(int)currentTile.TileIndex.x + 1,
-                                (int)currentTile.TileIndex.y];
-                            moves--;
-                        }
-                        break;
-                    case PlayerDirection.Up:
-                        if (checkTile((int)currentTile.TileIndex.x,
-                            (int)currentTile.TileIndex.y - 1))
-                        {
-                            currentTile = CurrentRoom.floorLayout.Layout[(int)currentTile.TileIndex.x,
-                                (int)currentTile.TileIndex.y - 1];
-                            moves--;
-                        }
-                        break;
-                    case PlayerDirection.Down:
-                        if (checkTile((int)currentTile.TileIndex.x,
-                           (int)currentTile.TileIndex.y + 1))
-                        {
-                            currentTile = CurrentRoom.floorLayout.Layout[(int)currentTile.TileIndex.x,
-                                (int)currentTile.TileIndex.y + 1];
-                            moves--;
-                        }
-                        break;
-                    default:
-                        return currentTile;
-                }
-                return currentTile;
+                tempTile = currentTile;
+                currentTile = CurrentRoom.FloorLayout.GetDestinationTile(currentTile, direction);
+                if (tempTile != currentTile)
+                    moves--;   
             }
+
+            switch (direction)
+            {
+                case PlayerDirection.Left:
+                    transform.rotation = Quaternion.Euler(0,-90,0);
+                    break;
+                case PlayerDirection.Right:
+                    transform.rotation = Quaternion.Euler(0, 90, 0);
+                    break;
+                case PlayerDirection.Up:
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                    break;
+                case PlayerDirection.Down:
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                    break;
+            }
+
             return currentTile;
-        }
-
-        bool checkTile(int xIndex, int yIndex)
-        {
-            bool xPassed = false;
-            bool yPassed = false;
-
-            if (xIndex >= 0 && xIndex <= 4)
-                xPassed = true;
-
-            if (xIndex >= 0 && xIndex <= 4)
-                yPassed = true;
-
-            return (xPassed && yPassed);
         }
     }
 }

@@ -5,11 +5,13 @@ namespace Assets.Scripts.ObjectScripts
     public class RoomTrigger : MonoBehaviour
     {
         public Player player;
-        public Room nextRoom;
-        public Camera camera;
-        private float cameraSpeed = 30;
+        public NewRoom nextRoom;
+        private Camera mainCamera;
+        private const float cameraSpeed = 15;
         private float startTime;
         private float cameraDistance;
+        private float distCovered;
+        private float fracJourney;
         private bool triggered;
         public Transform previousCameraLocation;
         public Transform nextCameraLocation;
@@ -17,8 +19,9 @@ namespace Assets.Scripts.ObjectScripts
         // Use this for initialization
         void Start ()
         {
-            cameraDistance = Vector3.Distance(previousCameraLocation.position,
+            cameraDistance = Vector3.Distance(previousCameraLocation.transform.position,
                 nextCameraLocation.position);
+            mainCamera = gameObject.GetComponentInParent<Camera>();
         }
 	
         // Update is called once per frame
@@ -26,23 +29,23 @@ namespace Assets.Scripts.ObjectScripts
 
             if (triggered)
             {
-                float distCovered = (Time.time - startTime)*cameraSpeed;
-                float fracJourney = distCovered/cameraDistance;
-                camera.transform.position = Vector3.Lerp(previousCameraLocation.position,
+                distCovered = (Time.time - startTime)*cameraSpeed;
+                fracJourney = distCovered/cameraDistance;
+                mainCamera.transform.position = Vector3.Lerp(previousCameraLocation.position,
                     nextCameraLocation.position, fracJourney);
             }
-            if (camera.transform.position == nextCameraLocation.position)
+            if (mainCamera.transform.position == nextCameraLocation.transform.position)
             {
                 triggered = false;
             }
         }
 
-        void OnTriggerEnter(Collider playerCollider)
+        void OnTriggerEnter()
         {
-            triggered = true;
-            startTime = Time.time;
             if (player.CurrentRoom != nextRoom)
             {
+                triggered = true;
+                startTime = Time.time;
                 player.switchRoom(nextRoom);
                 player.AddMoves(nextRoom.movesAllowed);
             }

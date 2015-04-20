@@ -1,48 +1,111 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using Assets.Scripts.ObjectScripts;
 using UnityEngine;
+using System.Collections;
 
 namespace Assets.Scripts.ObjectScripts
 {
     public class Grid : MonoBehaviour
     {
-        private Vector3 gridOrigin;
-        public Tile[,] Layout;
-        private const int gridWidth = 5;
-        private const int gridHeight = 5;
-        private List<Tile> neighbors;
- 
-        // Use this for initialization
-        void Awake()
-        {
-            gridOrigin = this.transform.position + new Vector3(-50, 0, 50);
-            Layout = new Tile[gridWidth,gridHeight];
-            setTiles();
-        }
-	
-        // Update is called once per frame
-        void Update () {
-	
-        }
+        //Data Structure Variables
+        public Tile[,] FloorTiles { get; private set; }
+        private GameObject[] tempGetComponentArray;
+        public Texture[] TileTextures;
+        
 
-        void setTiles()
+        // Use this for initialization
+        private void Awake()
         {
-            for (int y = 0; y < gridHeight; y++)
+            FloorTiles = new Tile[5, 5];
+            Vector2 tempVector = Vector2.zero;
+            for (int y = 0; y < 5; y++)
             {
-                for (int x = 0; x < gridWidth; x++)
+                for (int x = 0; x < 5; x++)
                 {
-                    //(gridOrigin.x + 2*x),(gridOrigin.y + 2*y)
-                    Layout[x,y] =  gameObject.AddComponent<Tile>();
-                    Layout[x,y].TileIndex = new Vector2(x,y);
-                    Layout[x, y].TilePos = new Vector3((gridOrigin.x + 20*x),0,(gridOrigin.z - 20*y));
+                    tempVector.x = x;
+                    tempVector.y = y;
+
+                    FloorTiles[x, y] = this.GetComponentsInChildren<Tile>()[(5*y+x)];
+                    FloorTiles[x, y].TilePos = this.GetComponentsInChildren<Tile>()[5*y + x].transform.position;
+                    FloorTiles[x, y].TileIndex = tempVector;
+                    FloorTiles[x, y].GetComponent<Renderer>().material.mainTexture =
+                        TileTextures[(int) FloorTiles[x, y].GetComponent<Tile>().currentType];
                 }
             }
         }
 
-        public List<Tile> getNeighbors(Tile tile)
+        // Update is called once per frame
+        private void Update()
         {
-            //TODO Write code that finds neighbor of tile passed in.
-            
-            return neighbors;
+
+        }
+
+        public Tile GetDestinationTile(Tile currentTile, Player.PlayerDirection direction)
+        {
+            switch (direction)
+            {
+                case Player.PlayerDirection.Left:
+                    if (checkGrid((int) currentTile.TileIndex.x - 1, 
+                        (int) currentTile.TileIndex.y))
+                    {
+                        if (checkTile(FloorTiles[(int)currentTile.TileIndex.x - 1,
+                            (int)currentTile.TileIndex.y]))
+                        currentTile = FloorTiles[(int)currentTile.TileIndex.x - 1, 
+                            (int)currentTile.TileIndex.y];
+                    }
+                    break;
+                case Player.PlayerDirection.Right:
+                    if (checkGrid((int)currentTile.TileIndex.x + 1,
+                        (int)currentTile.TileIndex.y))
+                    {
+                        if (checkTile(FloorTiles[(int)currentTile.TileIndex.x + 1,
+                            (int)currentTile.TileIndex.y]))
+                            currentTile = FloorTiles[(int)currentTile.TileIndex.x + 1,
+                                (int)currentTile.TileIndex.y];
+                    }
+                    break;
+                case Player.PlayerDirection.Up:
+                    if (checkGrid((int)currentTile.TileIndex.x,
+                        (int)currentTile.TileIndex.y - 1))
+                    {
+                        if (checkTile(FloorTiles[(int)currentTile.TileIndex.x,
+                            (int)currentTile.TileIndex.y - 1]))
+                            currentTile = FloorTiles[(int)currentTile.TileIndex.x,
+                                (int)currentTile.TileIndex.y - 1];
+                    }
+                    break;
+                case Player.PlayerDirection.Down:
+                    if (checkGrid((int)currentTile.TileIndex.x,
+                        (int)currentTile.TileIndex.y + 1))
+                    {
+                        if (checkTile(FloorTiles[(int)currentTile.TileIndex.x,
+                            (int)currentTile.TileIndex.y + 1]))
+                            currentTile = FloorTiles[(int)currentTile.TileIndex.x,
+                                (int)currentTile.TileIndex.y + 1];
+                    }
+                    break;
+            }
+
+            return currentTile;
+        }
+
+        bool checkGrid(int xIndex, int yIndex)
+        {
+            bool xPassed = false;
+            bool yPassed = false;
+
+            if (xIndex >= 0 && xIndex <= 4)
+                xPassed = true;
+
+            if (xIndex >= 0 && xIndex <= 4)
+                yPassed = true;
+
+            return (xPassed && yPassed);
+        }
+
+        bool checkTile(Tile tileToCheck)
+        {
+            return tileToCheck.currentType != Tile.TileType.Closed;
         }
     }
 }
