@@ -22,6 +22,7 @@ namespace Assets.Scripts.ObjectScripts
             cameraDistance = Vector3.Distance(previousCameraLocation.transform.position,
                 nextCameraLocation.position);
             mainCamera = gameObject.GetComponentInParent<Camera>();
+            transform.parent = null;
         }
 	
         // Update is called once per frame
@@ -33,14 +34,14 @@ namespace Assets.Scripts.ObjectScripts
                 fracJourney = distCovered/cameraDistance;
                 mainCamera.transform.position = Vector3.Lerp(previousCameraLocation.position,
                     nextCameraLocation.position, fracJourney);
-            }
-            if (mainCamera.transform.position == nextCameraLocation.transform.position)
-            {
-                triggered = false;
+                if (mainCamera.transform.position == nextCameraLocation.transform.position)
+                {
+                    triggered = false;
+                }
             }
         }
 
-        void OnTriggerEnter()
+        void OnTriggerEnter(Collider otherCollider)
         {
             if (player.CurrentRoom != nextRoom)
             {
