@@ -13,6 +13,7 @@ namespace Assets.Scripts.ObjectScripts
 
         //Player Variables:
         private int moves;
+        public int Moves { get { return moves; } }
         public NewRoom CurrentRoom;
         private Tile currentTile;
         private Tile tempTile;
@@ -45,8 +46,7 @@ namespace Assets.Scripts.ObjectScripts
             {
                 if(input.checkInput() == PlayerDirection.Restart)
                 {
-                    switchRoom(CurrentRoom);
-                    moves = CurrentRoom.movesAllowed;
+                    restartRoom();
                 }
             }
         }
@@ -57,7 +57,11 @@ namespace Assets.Scripts.ObjectScripts
             currentTile = nextRoom.StartingTile;
             transform.position = currentTile.TilePos;
         }
-
+        public void restartRoom()
+        {
+            switchRoom(CurrentRoom);
+            moves = CurrentRoom.movesAllowed;
+        }
         public void AddMoves(int numMoves)
         {
             moves += numMoves;
