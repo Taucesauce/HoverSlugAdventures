@@ -42,13 +42,6 @@ namespace Assets.Scripts.ObjectScripts
                 currentTile = movePlayer(input.checkInput());
             }
             transform.position = currentTile.TilePos;
-            if(moves <= 0)
-            {
-                if(input.checkInput() == PlayerDirection.Restart)
-                {
-                    restartRoom();
-                }
-            }
         }
 
         public void switchRoom(NewRoom nextRoom)
@@ -90,6 +83,10 @@ namespace Assets.Scripts.ObjectScripts
                     break;
                 case PlayerDirection.Down:
                     transform.rotation = Quaternion.Euler(0, 180, 0);
+                    break;
+                case PlayerDirection.Restart:
+                    currentTile = CurrentRoom.StartingTile;
+                    restartRoom();
                     break;
             }
 

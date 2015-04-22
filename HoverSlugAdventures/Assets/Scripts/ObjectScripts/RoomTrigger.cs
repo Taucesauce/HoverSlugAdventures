@@ -7,7 +7,7 @@ namespace Assets.Scripts.ObjectScripts
         public Player player;
         public NewRoom nextRoom;
         private Camera mainCamera;
-        private const float cameraSpeed = 15;
+        private const float cameraSpeed = 18;
         private float startTime;
         private float cameraDistance;
         private float distCovered;
