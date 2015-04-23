@@ -1,15 +1,45 @@
 fileFormatVersion: 2
-guid: f71f0c115669845499c4b28e747fe98d
-timeCreated: 1429461420
+guid: 04337b4a606d1c6479777e3a46d09954
+timeCreated: 1429800855
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: chair
+    100000: joint1
+    100002: joint10
+    100004: joint11
+    100006: joint12
+    100008: joint13
+    100010: joint14
+    100012: joint2
+    100014: joint3
+    100016: joint4
+    100018: joint5
+    100020: joint6
+    100022: joint7
+    100024: joint8
+    100026: joint9
+    100028: //RootNode
+    100030: pCylinder3
+    400000: joint1
+    400002: joint10
+    400004: joint11
+    400006: joint12
+    400008: joint13
+    400010: joint14
+    400012: joint2
+    400014: joint3
+    400016: joint4
+    400018: joint5
+    400020: joint6
+    400022: joint7
+    400024: joint8
+    400026: joint9
+    400028: //RootNode
+    400030: pCylinder3
+    4300000: pCylinder3
+    9500000: //RootNode
+    13700000: pCylinder3
   materials:
     importMaterials: 1
     materialName: 0
@@ -29,7 +59,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 7.5
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -63,7 +93,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
