@@ -9,8 +9,6 @@ public class MainMenu : MonoBehaviour {
     private Button StartButton;
     private Button ExitGame;
     public Canvas HUD;
-    public Canvas Room1Controls;
-
 
 	// Use this for initialization
 	void Awake () {
@@ -25,7 +23,6 @@ public class MainMenu : MonoBehaviour {
         {
             this.gameObject.SetActive(false);
             HUD.gameObject.SetActive(true);
-            Room1Controls.gameObject.SetActive(true);
         }
 	}
 }
