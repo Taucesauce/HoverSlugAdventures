@@ -16,6 +16,7 @@ namespace Assets.Scripts.ObjectScripts
         public int Moves { get { return moves; } }
         public NewRoom CurrentRoom;
         private Tile currentTile;
+        public Tile CurrentTile { get { return currentTile; } }
         private Tile tempTile;
         private InputHandler input;
 

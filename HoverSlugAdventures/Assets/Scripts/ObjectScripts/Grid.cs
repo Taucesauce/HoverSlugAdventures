@@ -42,6 +42,8 @@ namespace Assets.Scripts.ObjectScripts
 
         public Tile GetDestinationTile(Tile currentTile, Player.PlayerDirection direction)
         {
+            Tile tempTile = currentTile;
+
             switch (direction)
             {
                 case Player.PlayerDirection.Left:
@@ -85,7 +87,10 @@ namespace Assets.Scripts.ObjectScripts
                     }
                     break;
             }
-
+            if(currentTile.currentType == Tile.TileType.Teleport && tempTile != currentTile)
+            {
+                return currentTile.teleportDestination;
+            }
             return currentTile;
         }
 
