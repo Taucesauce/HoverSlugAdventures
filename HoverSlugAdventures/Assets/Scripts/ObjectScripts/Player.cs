@@ -19,10 +19,14 @@ namespace Assets.Scripts.ObjectScripts
         public Tile CurrentTile { get { return currentTile; } }
         private Tile tempTile;
         private InputHandler input;
+        private bool gameStart, levelCompleted;
+        public bool LevelCompleted { get { return levelCompleted; } }
 
         void Awake()
         {
             input = new InputHandler();
+            levelCompleted = false;
+            gameStart = false;
         }
         // Use this for initialization
         void Start ()
@@ -40,7 +44,8 @@ namespace Assets.Scripts.ObjectScripts
             }
             else
             {
-                currentTile = movePlayer(input.checkInput());
+                if(levelCompleted == false && gameStart == true)
+                    currentTile = movePlayer(input.checkInput());
             }
             transform.position = currentTile.TilePos;
         }
@@ -93,6 +98,22 @@ namespace Assets.Scripts.ObjectScripts
             }
 
             return currentTile;
+        }
+
+        public void setMoves(int moveNum)
+        {
+            moves = moveNum;
+        }
+
+        public void StartGame()
+        {
+            gameStart = true;
+            levelCompleted = false;
+        }
+
+        public void LevelComplete()
+        {
+            levelCompleted = true;
         }
     }
 }

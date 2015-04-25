@@ -4,14 +4,14 @@ using System.Collections;
 
 namespace Assets.Scripts.ObjectScripts
 {
-    public class Canvas : MonoBehaviour
+    public class HUD : MonoBehaviour
     {
         public Player player;
         public Camera camera;
         private float hudSpeed = 3;
         private Button restartButton;
         private Text movesRemaining;
-
+        public Text levelComplete;
         //Lerp Variables
         private float startTime;
         private float distance;
@@ -39,6 +39,14 @@ namespace Assets.Scripts.ObjectScripts
 
             movesRemaining.text = player.Moves.ToString();
             movesRemaining.color = setColor();
+            if(player.LevelCompleted == true)
+            {
+                LevelComplete();
+            }
+            else
+            {
+                levelComplete.gameObject.SetActive(false);
+            }
 
             if (lerpingToCamera && tempHUDPos != this.transform.position)
             {
@@ -88,6 +96,15 @@ namespace Assets.Scripts.ObjectScripts
             {
                 return Color.cyan;
             }
+        }
+
+        public void LevelComplete()
+        {
+            lerpingToCamera = true;
+            movesRemaining.gameObject.SetActive(false);
+            player.setMoves(0);
+            restartButton.gameObject.SetActive(false);
+            levelComplete.gameObject.SetActive(true);
         }
     }
 }

@@ -5,16 +5,12 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
     //Dependencies
-    private Text titleText;
     private Button StartButton;
-    private Button ExitGame;
     public Canvas HUD;
 
 	// Use this for initialization
 	void Awake () {
-        titleText = gameObject.GetComponentInChildren<Text>();
         StartButton = gameObject.GetComponentInChildren<Button>();
-        ExitGame = StartButton.GetComponentInChildren<Button>();
 	}
 	
 	// Update is called once per frame

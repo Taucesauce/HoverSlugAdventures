@@ -3,10 +3,16 @@ using System.Collections;
 
 namespace Assets.Scripts.ObjectScripts
 {
-    public class TeleportTile : Tile
+    public class Teleport : MonoBehaviour
     {
-        
-        public Player player;
-        public Tile DestinationTile;
+        private ParticleSystem burst;
+        void Start()
+        {
+            burst = gameObject.GetComponentInChildren<ParticleSystem>();
+        }
+        void OnTriggerEnter()
+        {
+            burst.Play();
+        }
     }
 }
