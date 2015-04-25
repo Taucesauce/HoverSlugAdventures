@@ -50,6 +50,7 @@ namespace Assets.Scripts.ObjectScripts
             CurrentRoom = nextRoom;
             currentTile = nextRoom.StartingTile;
             transform.position = currentTile.TilePos;
+            transform.rotation = Quaternion.Euler(0, 90, 0);
         }
         public void restartRoom()
         {
