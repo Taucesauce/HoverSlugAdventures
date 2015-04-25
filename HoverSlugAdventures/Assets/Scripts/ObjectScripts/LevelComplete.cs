@@ -23,5 +23,10 @@ namespace Assets.Scripts.ObjectScripts
         {
             Application.LoadLevel(NextLevel);
         }
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
     }
 }
