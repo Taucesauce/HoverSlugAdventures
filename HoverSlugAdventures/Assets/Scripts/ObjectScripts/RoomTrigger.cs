@@ -51,5 +51,11 @@ namespace Assets.Scripts.ObjectScripts
                 player.AddMoves(nextRoom.movesAllowed);
             }
         }
+
+        public void MenuPress()
+        {
+            triggered = true;
+            startTime = Time.time;
+        }
     }
 }
