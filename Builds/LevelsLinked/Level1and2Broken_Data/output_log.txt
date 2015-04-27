@@ -14,7 +14,7 @@ Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\LevelsLi
 Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\LevelsLinked\Level1and2Broken_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\LevelsLinked\Level1and2Broken_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\LevelsLinked\Level1and2Broken_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.061 seconds
+- Completed reload, in  0.045 seconds
 desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -30,10 +30,4 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 400)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 5638 -> priority: 1 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.696036 ms
-
-Unloading 218 unused Assets to reduce memory usage. Loaded Objects now: 428.
-Total: 0.971482 ms (FindLiveObjects: 0.065598 ms CreateObjectMapping: 0.043732 ms MarkObjects: 0.253468 ms  DeleteObjects: 0.608236 ms)
-
+  Thread -> id: 1ad0 -> priority: 1 
