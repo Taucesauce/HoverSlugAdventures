@@ -21,10 +21,10 @@ namespace Assets.Scripts.ObjectScripts
         private InputHandler input;
         private bool gameStart, levelCompleted;
         public bool LevelCompleted { get { return levelCompleted; } }
-
+        public bool GameStart { get { return gameStart; } }
         void Awake()
         {
-            input = new InputHandler();
+            input = new InputHandler();      
             levelCompleted = false;
             gameStart = false;
         }

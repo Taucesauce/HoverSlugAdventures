@@ -4,7 +4,7 @@ namespace Assets.Scripts.ObjectScripts
 {
     public class Tile : MonoBehaviour {
 
-        public enum TileType { Open, Closed, RoomFinish, Teleport }
+        public enum TileType { Open, Closed, RoomFinish, Teleport, Switch }
 
         private Vector3 tilePos;
         public Vector3 TilePos { get { return tilePos; } set { tilePos = value; } }
