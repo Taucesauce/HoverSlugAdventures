@@ -11,7 +11,7 @@ namespace Assets.Scripts.ObjectScripts
         private Vector2 tileIndex;
         public Vector2 TileIndex { get { return tileIndex; } set { tileIndex = value; } }
         //HACKED AS FUCK
-        public Tile teleportDestination;
+        public Tile TileTarget;
         public TileType currentType;
 
         // Use this for initialization

@@ -11,8 +11,8 @@ namespace Assets.Scripts.ObjectScripts
         public Tile[,] FloorTiles { get; private set; }
         private GameObject[] tempGetComponentArray;
         public Texture[] TileTextures;
-        
-
+        private int switchNum = 0;
+        public int SwitchNum { get { return switchNum; } }
         // Use this for initialization
         private void Awake()
         {
@@ -30,6 +30,10 @@ namespace Assets.Scripts.ObjectScripts
                     FloorTiles[x, y].TileIndex = tempVector;
                     FloorTiles[x, y].GetComponent<Renderer>().material.mainTexture =
                         TileTextures[(int) FloorTiles[x, y].GetComponent<Tile>().currentType];
+                    if(FloorTiles[x, y].currentType == Tile.TileType.Switch)
+                    {
+                        switchNum++;
+                    }
                 }
             }
         }
@@ -89,7 +93,14 @@ namespace Assets.Scripts.ObjectScripts
             }
             if(currentTile.currentType == Tile.TileType.Teleport && tempTile != currentTile)
             {
-                return currentTile.teleportDestination;
+                return currentTile.TileTarget;
+            }
+            if (currentTile.currentType == Tile.TileType.Switch && tempTile != currentTile)
+            {
+                switchNum--;
+                Debug.Log(switchNum);
+                currentTile.TileTarget.currentType = Tile.TileType.Open;
+                currentTile.currentType = Tile.TileType.Open;
             }
             return currentTile;
         }
