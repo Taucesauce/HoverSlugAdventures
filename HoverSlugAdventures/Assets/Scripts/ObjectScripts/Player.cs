@@ -61,6 +61,7 @@ namespace Assets.Scripts.ObjectScripts
         {
             switchRoom(CurrentRoom);
             moves = CurrentRoom.movesAllowed;
+            CurrentRoom.FloorLayout.ResetRoom();
         }
         public void AddMoves(int numMoves)
         {

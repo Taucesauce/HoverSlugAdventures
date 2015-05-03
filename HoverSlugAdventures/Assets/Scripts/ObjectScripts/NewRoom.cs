@@ -8,13 +8,15 @@ namespace Assets.Scripts.ObjectScripts
         public int movesAllowed;
         public int startX;
         public int startY;
+        public bool isCurrentRoom;
+        private AudioSource LaserNoise;
 
         private Tile startingTile;
         public Tile StartingTile { get { return startingTile; } set { startingTile = value; } }
 
         void Awake()
         {
-            
+            LaserNoise = GetComponent<AudioSource>();
         }
         // Use this for initialization
         void Start ()
@@ -25,7 +27,25 @@ namespace Assets.Scripts.ObjectScripts
 	
         // Update is called once per frame
         void Update () {
-	
+            if (LaserNoise != null)
+            {
+                checkSound();
+            }
+        }
+
+        private void checkSound()
+        {
+            if (!LaserNoise.isPlaying)
+            {
+                if (isCurrentRoom)
+                {
+                    LaserNoise.Play();
+                }
+            }
+            else
+            {
+                LaserNoise.Stop();
+            }
         }
     }
 }

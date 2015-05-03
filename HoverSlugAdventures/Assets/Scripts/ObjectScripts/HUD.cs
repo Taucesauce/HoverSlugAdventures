@@ -12,6 +12,7 @@ namespace Assets.Scripts.ObjectScripts
         private Button restartButton;
         private Text movesRemaining;
         public Text levelComplete;
+        private AudioSource lowMoves;
         //Lerp Variables
         private float startTime;
         private float distance;
@@ -26,6 +27,7 @@ namespace Assets.Scripts.ObjectScripts
 
         void Awake()
         {
+            lowMoves = gameObject.GetComponent<AudioSource>();
             restartButton = gameObject.GetComponentInChildren<Button>();
             movesRemaining = gameObject.GetComponentInChildren<Text>();
         }
@@ -86,14 +88,22 @@ namespace Assets.Scripts.ObjectScripts
             fracJourney = distCovered / distance;
             this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position + hudYOffset, fracJourney);
         }
+
+        private int tempMoves;
         Color setColor()
         {
             if (player.Moves < 4)
             {
+                if (player.Moves != tempMoves)
+                {
+                    lowMoves.Play();
+                }
+                tempMoves = player.Moves;
                 return Color.red;
             }
             else
             {
+                tempMoves = player.Moves;
                 return Color.cyan;
             }
         }
@@ -105,6 +115,11 @@ namespace Assets.Scripts.ObjectScripts
             player.setMoves(0);
             restartButton.gameObject.SetActive(false);
             levelComplete.gameObject.SetActive(true);
+        }
+
+        private void LowMovePlay()
+        {
+            
         }
     }
 }

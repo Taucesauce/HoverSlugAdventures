@@ -23,6 +23,10 @@ namespace Assets.Scripts.ObjectScripts
             {
                 sign.SetActive(true);
             }
+            else
+            { 
+                sign.SetActive(false);
+            }
         }
     }
 }
