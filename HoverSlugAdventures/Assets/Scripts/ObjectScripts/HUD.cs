@@ -13,6 +13,7 @@ namespace Assets.Scripts.ObjectScripts
         private Text movesRemaining;
         public Text levelComplete;
         private AudioSource lowMoves;
+
         //Lerp Variables
         private float startTime;
         private float distance;
@@ -66,6 +67,12 @@ namespace Assets.Scripts.ObjectScripts
                 lerpingToCamera = true;
                 lerpToCamera();
             }
+
+            if(Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+
             else if (player.Moves > 0)
             {
                 lerpingToCamera = false;
@@ -115,11 +122,6 @@ namespace Assets.Scripts.ObjectScripts
             player.setMoves(0);
             restartButton.gameObject.SetActive(false);
             levelComplete.gameObject.SetActive(true);
-        }
-
-        private void LowMovePlay()
-        {
-            
         }
     }
 }

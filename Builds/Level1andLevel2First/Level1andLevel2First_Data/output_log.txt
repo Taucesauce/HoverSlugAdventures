@@ -14,7 +14,7 @@ Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\Level1an
 Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\Level1andLevel2First\Level1andLevel2First_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\Level1andLevel2First\Level1andLevel2First_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\Level1andLevel2First\Level1andLevel2First_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.067 seconds
+- Completed reload, in  0.121 seconds
 desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -30,17 +30,4 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 400)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 4b1c -> priority: 1 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.667712 ms
-
-Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 980.
-Total: 0.922841 ms (FindLiveObjects: 0.108884 ms CreateObjectMapping: 0.050872 ms MarkObjects: 0.467221 ms  DeleteObjects: 0.295416 ms)
-
-IndexOutOfRangeException: Array index is out of range.
-  at Assets.Scripts.ObjectScripts.Grid.GetDestinationTile (Assets.Scripts.ObjectScripts.Tile currentTile, PlayerDirection direction) [0x00000] in <filename unknown>:0 
-  at Assets.Scripts.ObjectScripts.Player.movePlayer (PlayerDirection direction) [0x00000] in <filename unknown>:0 
-  at Assets.Scripts.ObjectScripts.Player.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
+  Thread -> id: 43ac -> priority: 1 
