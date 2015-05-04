@@ -68,11 +68,6 @@ namespace Assets.Scripts.ObjectScripts
                 lerpToCamera();
             }
 
-            if(Input.GetKey(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
-
             else if (player.Moves > 0)
             {
                 lerpingToCamera = false;
