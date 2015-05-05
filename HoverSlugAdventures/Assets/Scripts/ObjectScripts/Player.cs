@@ -9,11 +9,14 @@ namespace Assets.Scripts.ObjectScripts
 {
     public class Player : MonoBehaviour
     {
-        public enum PlayerDirection { Left = 1, Right = 2, Up = 3, Down = 4, Restart = 5 }
+        public enum PlayerDirection { Left = 1, Right = 2, Up = 3, Down = 4, Restart = 5, Party = 6 }
 
         //Player Variables:
         private int moves;
         public int Moves { get { return moves; } }
+
+        public Transform[] partyFavors; 
+
         public NewRoom CurrentRoom;
         private Tile currentTile;
         public Tile CurrentTile { get { return currentTile; } }
@@ -95,6 +98,12 @@ namespace Assets.Scripts.ObjectScripts
                 case PlayerDirection.Restart:
                     currentTile = CurrentRoom.StartingTile;
                     restartRoom();
+                    break;
+                case PlayerDirection.Party:
+                    foreach(Transform pt in partyFavors)
+                    {
+                        pt.gameObject.SetActive(!(pt.gameObject.activeSelf));
+                    }
                     break;
             }
 

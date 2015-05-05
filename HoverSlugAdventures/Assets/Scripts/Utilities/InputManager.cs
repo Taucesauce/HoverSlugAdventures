@@ -32,6 +32,11 @@ namespace Assets.Scripts.Utilities
                 return Player.PlayerDirection.Restart;
             }
 
+            if(Input.GetKeyDown(KeyCode.P))
+            {
+                return Player.PlayerDirection.Party;
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Application.Quit();
