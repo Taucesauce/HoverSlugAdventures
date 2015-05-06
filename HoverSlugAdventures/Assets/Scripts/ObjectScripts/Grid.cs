@@ -12,6 +12,7 @@ namespace Assets.Scripts.ObjectScripts
         public Tile[,] FloorTiles { get; private set; }
         private GameObject[] tempGetComponentArray;
         public Texture[] TileTextures;
+        public Switch[] switches;
         private int switchNum = 0;
         private List<Tile> switchList;
         private AudioSource teleportSound;
@@ -144,6 +145,7 @@ namespace Assets.Scripts.ObjectScripts
         {
             resetTiles();
             resetObjects();
+            resetSwitches();
             switchNum = numSwitches;
         }
 
@@ -164,6 +166,14 @@ namespace Assets.Scripts.ObjectScripts
             foreach (ObjectManipulation obj in interactiveObjects)
             {
                 obj.Reset();
+            }
+        }
+
+        private void resetSwitches()
+        {
+            foreach(Switch s in switches)
+            {
+                s.Reset();
             }
         }
     }
