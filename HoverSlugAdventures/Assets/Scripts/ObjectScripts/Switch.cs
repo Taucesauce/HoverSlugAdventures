@@ -33,6 +33,7 @@ public class Switch : MonoBehaviour {
 
     public void Reset()
     {
+        switchToggle = false;
         rend.sharedMaterial = materials[0];
     }
 }
