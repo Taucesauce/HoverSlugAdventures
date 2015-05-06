@@ -9,14 +9,25 @@ namespace Assets.Scripts.ObjectScripts
         public int startX;
         public int startY;
         public bool isCurrentRoom;
+
         private AudioSource LaserNoise;
+        private bool startPlaying;
+        private bool isPlaying;
 
         private Tile startingTile;
         public Tile StartingTile { get { return startingTile; } set { startingTile = value; } }
 
         void Awake()
         {
-            LaserNoise = GetComponent<AudioSource>();
+            try {
+                LaserNoise = GetComponent<AudioSource>();
+            }
+            catch(MissingComponentException e)
+            {
+                Debug.Log("No laser");
+            }
+            startPlaying = false;
+            isPlaying = false;
         }
         // Use this for initialization
         void Start ()
@@ -29,22 +40,33 @@ namespace Assets.Scripts.ObjectScripts
         void Update () {
             if (LaserNoise != null)
             {
-                checkSound();
+                startPlaying = checkSound();
             }
-        }
 
-        private void checkSound()
-        {
-            if (!LaserNoise.isPlaying)
+            if(startPlaying)
             {
-                if (isCurrentRoom)
+                if(!(isPlaying))
                 {
+                    isPlaying = true;
                     LaserNoise.Play();
                 }
             }
             else
             {
                 LaserNoise.Stop();
+            }
+
+        }
+
+        private bool checkSound()
+        {
+            if(isCurrentRoom)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
