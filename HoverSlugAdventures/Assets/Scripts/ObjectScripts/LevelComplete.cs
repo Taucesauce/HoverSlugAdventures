@@ -15,6 +15,17 @@ namespace Assets.Scripts.ObjectScripts
             Victory = GetComponent<AudioSource>();
         }
 
+        void Update()
+        {
+            if(player.LevelCompleted == true)
+            {
+                if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+                {
+                    PlayNextLevel();
+                }
+            }
+        }
+
         void OnTriggerEnter()
         {
             player.LevelComplete();
