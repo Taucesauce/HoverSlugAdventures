@@ -6,9 +6,12 @@ public class Switch : MonoBehaviour {
     public Material[] materials;
     private bool switchToggle;
     private Renderer rend;
+    private AudioSource sound;
+
 	// Use this for initialization
 	void Start () {
         rend = GetComponent<Renderer>();
+        sound = GetComponent<AudioSource>();
         rend.enabled = true;
         switchToggle = false;
 	}
@@ -29,6 +32,7 @@ public class Switch : MonoBehaviour {
         {
             rend.sharedMaterial = materials[0];
         }
+        sound.Play();
     }
 
     public void Reset()
