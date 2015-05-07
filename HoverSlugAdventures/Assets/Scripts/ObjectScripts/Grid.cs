@@ -9,6 +9,9 @@ namespace Assets.Scripts.ObjectScripts
     public class Grid : MonoBehaviour
     {
         //Data Structure Variables
+
+        protected int gridWidth;
+        protected int gridHeight;
         public Tile[,] FloorTiles { get; private set; }
         private GameObject[] tempGetComponentArray;
         public Texture[] TileTextures;
@@ -25,25 +28,39 @@ namespace Assets.Scripts.ObjectScripts
 
         private int numSwitches;
         // Use this for initialization
-        private void Awake()
+        protected virtual void Awake()
         {
+            gridWidth = 5;
+            gridHeight = 5;
             switchList = new List<Tile>();
             teleportSound = GetComponent<AudioSource>();
-            FloorTiles = new Tile[5, 5];
+        }
 
+        private void Start()
+        {
+            setTiles();
+        }
+        // Update is called once per frame
+        private void Update()
+        {
+
+        }
+        protected void setTiles()
+        {
+            FloorTiles = new Tile[gridWidth, gridHeight];
             Vector2 tempVector = Vector2.zero;
-            for (int y = 0; y < 5; y++)
+            for (int y = 0; y < gridHeight; y++)
             {
-                for (int x = 0; x < 5; x++)
+                for (int x = 0; x < gridWidth; x++)
                 {
                     tempVector.x = x;
                     tempVector.y = y;
 
-                    FloorTiles[x, y] = this.GetComponentsInChildren<Tile>()[(5*y + x)];
-                    FloorTiles[x, y].TilePos = this.GetComponentsInChildren<Tile>()[5*y + x].transform.position;
+                    FloorTiles[x, y] = this.GetComponentsInChildren<Tile>()[(gridHeight * y + x)];
+                    FloorTiles[x, y].TilePos = this.GetComponentsInChildren<Tile>()[gridHeight * y + x].transform.position;
                     FloorTiles[x, y].TileIndex = tempVector;
                     FloorTiles[x, y].GetComponent<Renderer>().material.mainTexture =
-                        TileTextures[(int) FloorTiles[x, y].GetComponent<Tile>().currentType];
+                        TileTextures[(int)FloorTiles[x, y].GetComponent<Tile>().currentType];
                     if (FloorTiles[x, y].currentType == Tile.TileType.Switch)
                     {
                         switchNum++;
@@ -53,13 +70,6 @@ namespace Assets.Scripts.ObjectScripts
             }
             numSwitches = switchNum;
         }
-
-        // Update is called once per frame
-        private void Update()
-        {
-
-        }
-
         public Tile GetDestinationTile(Tile currentTile, Player.PlayerDirection direction)
         {
             Tile tempTile = currentTile;
@@ -122,21 +132,21 @@ namespace Assets.Scripts.ObjectScripts
             return currentTile;
         }
 
-        private bool checkGrid(int xIndex, int yIndex)
+        protected bool checkGrid(int xIndex, int yIndex)
         {
             bool xPassed = false;
             bool yPassed = false;
 
-            if (xIndex >= 0 && xIndex <= 4)
+            if (xIndex >= 0 && xIndex <= gridHeight-1)
                 xPassed = true;
 
-            if (xIndex >= 0 && xIndex <= 4)
+            if (xIndex >= 0 && xIndex <= gridHeight-1)
                 yPassed = true;
 
             return (xPassed && yPassed);
         }
 
-        private bool checkTile(Tile tileToCheck)
+        protected bool checkTile(Tile tileToCheck)
         {
             return tileToCheck.currentType != Tile.TileType.Closed;
         }
@@ -149,7 +159,7 @@ namespace Assets.Scripts.ObjectScripts
             switchNum = numSwitches;
         }
 
-        private void resetTiles()
+        protected void resetTiles()
         {
             foreach (Tile tile in FloorTiles)
             {
@@ -161,7 +171,7 @@ namespace Assets.Scripts.ObjectScripts
             }
         }
 
-        private void resetObjects()
+        protected void resetObjects()
         {
             foreach (ObjectManipulation obj in interactiveObjects)
             {
@@ -169,7 +179,7 @@ namespace Assets.Scripts.ObjectScripts
             }
         }
 
-        private void resetSwitches()
+        protected void resetSwitches()
         {
             foreach(Switch s in switches)
             {
