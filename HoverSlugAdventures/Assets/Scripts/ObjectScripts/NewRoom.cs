@@ -19,13 +19,7 @@ namespace Assets.Scripts.ObjectScripts
 
         void Awake()
         {
-            try {
-                LaserNoise = GetComponent<AudioSource>();
-            }
-            catch(MissingComponentException e)
-            {
-                Debug.Log("No laser");
-            }
+            LaserNoise = GetComponent<AudioSource>();
             startPlaying = false;
             isPlaying = false;
         }
@@ -55,7 +49,7 @@ namespace Assets.Scripts.ObjectScripts
             {
                 LaserNoise.Stop();
             }
-
+            startingTile = floorLayout.FloorTiles[startX, startY];
         }
 
         private bool checkSound()

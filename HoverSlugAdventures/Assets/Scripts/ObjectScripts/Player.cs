@@ -68,7 +68,7 @@ namespace Assets.Scripts.ObjectScripts
         }
         public void AddMoves(int numMoves)
         {
-            moves += numMoves;
+            moves = numMoves;
         }
         
         Tile movePlayer(PlayerDirection direction)

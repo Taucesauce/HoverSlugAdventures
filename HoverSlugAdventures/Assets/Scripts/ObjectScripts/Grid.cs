@@ -16,9 +16,9 @@ namespace Assets.Scripts.ObjectScripts
         private GameObject[] tempGetComponentArray;
         public Texture[] TileTextures;
         public Switch[] switches;
-        private int switchNum = 0;
-        private List<Tile> switchList;
-        private AudioSource teleportSound;
+        protected int switchNum = 0;
+        protected List<Tile> switchList;
+        protected AudioSource teleportSound;
         public ObjectManipulation[] interactiveObjects;
  
         public int SwitchNum
