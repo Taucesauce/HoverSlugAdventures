@@ -119,7 +119,8 @@ namespace Assets.Scripts.ObjectScripts
             }
             if (currentTile.currentType == Tile.TileType.Teleport && tempTile != currentTile)
             {
-                teleportSound.Play();
+                //teleportSound.Play();
+				AkSoundEngine.PostEvent ("Play_Teleport", gameObject);
                 return currentTile.TileTarget;
             }
             if (currentTile.currentType == Tile.TileType.Switch && tempTile != currentTile)

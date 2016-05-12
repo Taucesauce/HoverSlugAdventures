@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour {
         {
             this.gameObject.SetActive(false);
             HUD.gameObject.SetActive(true);
+			AkSoundEngine.PostEvent ("Play_StartButton", gameObject);
         }
 	}
 }

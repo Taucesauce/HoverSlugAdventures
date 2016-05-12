@@ -21,6 +21,7 @@ namespace Assets.Scripts.ObjectScripts
             {
                 if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
                 {
+
                     PlayNextLevel();
                 }
             }
@@ -29,11 +30,13 @@ namespace Assets.Scripts.ObjectScripts
         void OnTriggerEnter()
         {
             player.LevelComplete();
-            Victory.Play();
+            //Victory.Play();
+			AkSoundEngine.PostEvent ("Play_Victory", gameObject);
         }
 
         public void PlayNextLevel()
         {
+			AkSoundEngine.PostEvent ("Play_StartButton", gameObject);
             Application.LoadLevel(NextLevel);
         }
 

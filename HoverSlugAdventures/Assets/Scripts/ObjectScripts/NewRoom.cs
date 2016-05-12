@@ -42,12 +42,14 @@ namespace Assets.Scripts.ObjectScripts
                 if(!(isPlaying))
                 {
                     isPlaying = true;
-                    LaserNoise.Play();
+                    //LaserNoise.Play();
+					AkSoundEngine.PostEvent ("Play_LaserBeamHum", gameObject);
                 }
             }
             else
             {
-                LaserNoise.Stop();
+                //LaserNoise.Stop();
+				AkSoundEngine.PostEvent ("Stop_LaserBeamHum", gameObject);
             }
             startingTile = floorLayout.FloorTiles[startX, startY];
         }

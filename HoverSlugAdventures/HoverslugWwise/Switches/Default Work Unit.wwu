@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65069278-8F39-4565-8B7B-7A4453C61897}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{65069278-8F39-4565-8B7B-7A4453C61897}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="MusicType" ID="{67BD499E-47BB-4C8E-9C89-CE3096F0298C}">
+					<ChildrenList>
+						<Switch Name="Level1" ID="{38C8C4C8-E8A7-4F21-BB52-7D13EEA31373}"/>
+						<Switch Name="Level2" ID="{1F09F625-86D8-4A9D-9C4F-FF666728FD53}"/>
+						<Switch Name="Menu" ID="{27E015AE-FB05-43E6-B7D0-CDB065C92198}"/>
+						<Switch Name="Party" ID="{2D1D6C23-6FBA-4E89-95F5-83BDAEE9B4CF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

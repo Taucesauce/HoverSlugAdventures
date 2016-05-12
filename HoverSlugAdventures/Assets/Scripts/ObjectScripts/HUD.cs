@@ -66,12 +66,15 @@ namespace Assets.Scripts.ObjectScripts
             {
                 lerpingToCamera = true;
                 lerpToCamera();
+
+
             }
 
             else if (player.Moves > 0)
             {
                 lerpingToCamera = false;
                 lerpToPlayer();
+
             }
 
             tempHUDPos = this.transform.position;
@@ -80,15 +83,23 @@ namespace Assets.Scripts.ObjectScripts
 
         private void lerpToCamera()
         {
+			//I will get this working eventually.
+			//if (player.Moves >= 0)
+			//{AkSoundEngine.PostEvent ("Play_HudZoomIn", gameObject);}
             distCovered = (Time.time - startTime) * hudSpeed;
             fracJourney = distCovered / distance;
             this.transform.position = Vector3.Lerp(this.transform.position, camera.transform.position + cameraLerpOffset, fracJourney);
+
         }
         private void lerpToPlayer()
         {
+			//I will get this working eventually also
+			//if (player.Moves >= 0)
+			//{AkSoundEngine.PostEvent ("Play_HudZoomOut", gameObject);}
             distCovered = (Time.time - startTime) * hudSpeed;
             fracJourney = distCovered / distance;
             this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position + hudYOffset, fracJourney);
+
         }
 
         private int tempMoves;
@@ -98,7 +109,8 @@ namespace Assets.Scripts.ObjectScripts
             {
                 if (player.Moves != tempMoves)
                 {
-                    lowMoves.Play();
+                    //lowMoves.Play();
+					AkSoundEngine.PostEvent ("Play_MoveCount", gameObject);
                 }
                 tempMoves = player.Moves;
                 return Color.red;

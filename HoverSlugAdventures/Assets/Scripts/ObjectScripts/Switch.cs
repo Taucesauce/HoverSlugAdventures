@@ -27,12 +27,14 @@ public class Switch : MonoBehaviour {
         if(switchToggle)
         {
             rend.sharedMaterial = materials[1];
+			AkSoundEngine.PostEvent ("Play_SwitchOn", gameObject);
         }
         else
         {
             rend.sharedMaterial = materials[0];
+			AkSoundEngine.PostEvent ("Play_SwitchOff", gameObject);
         }
-        sound.Play();
+        //sound.Play();
     }
 
     public void Reset()

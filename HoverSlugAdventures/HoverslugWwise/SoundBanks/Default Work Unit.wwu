@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{17665A0F-8232-407F-A27D-AFD0C25612E5}" SchemaVersion="70">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{17665A0F-8232-407F-A27D-AFD0C25612E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{0DEB8B7B-0F4A-418F-B631-942EDF07C738}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_HudZoomOut" ID="{53F77A04-6F0F-45EA-9568-C9096157845E}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MoveCount" ID="{7EE6EA21-7679-42E7-9EA7-60A1D0ADEDB8}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Move" ID="{B4895D33-D6BA-467C-8B30-FAF0AFCECFDF}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_State_Menu" ID="{AD484935-669C-4859-A992-2FEE5B56E10F}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Secret" ID="{5D030C76-C05C-4382-8ADD-97CBF947706F}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_HudZoomIn" ID="{A00A987D-B733-4DED-A48D-8B116D84BA44}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_State_Level2" ID="{6D569B80-31AE-401B-9BC5-1E3E8F6484C2}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Teleport" ID="{E003DE80-F4FE-439D-8E26-BF06A477A487}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Victory" ID="{6EC22A91-07D8-44DF-892A-6C4892A4D1A2}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_State_Level1" ID="{C039D592-496D-4418-9350-FBEEDEE4B7FA}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_LaserBeamHum" ID="{3097F09A-6393-4FAD-80B2-B9B82C7FBB48}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SwitchOn" ID="{1A3942A6-BEB3-4181-ACAC-6DA12B88AE56}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hover" ID="{D62F12B2-2491-440C-91F1-7B865E44A65D}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Restart" ID="{DE5837B3-75E5-4436-BCA5-BF18EBD14605}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SwitchOff" ID="{A9A83EB4-019D-4710-BF20-44BC7A2C677B}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_StartButton" ID="{C698E9CD-F197-4B8E-83EC-83A6C525CF82}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music" ID="{88E087D6-676E-4956-BDBC-2C92C3278819}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_LaserBeamHum" ID="{9EC011D9-E585-4930-A940-DA00C8BCE199}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PartyHorn" ID="{C7AAF0D9-F275-49CF-AB0C-C982AE4F07CD}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{AFD02AF1-2155-4248-A607-D0BB367118E4}" WorkUnitID="{698AF2BE-E9DF-4943-A9A3-394D04D329A2}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

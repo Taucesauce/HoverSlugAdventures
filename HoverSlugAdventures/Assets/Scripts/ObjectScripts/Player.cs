@@ -16,6 +16,7 @@ namespace Assets.Scripts.ObjectScripts
         public int Moves { get { return moves; } }
 
         public Transform[] partyFavors; 
+		public bool PartyEngage;
 
         public NewRoom CurrentRoom;
         private Tile currentTile;
@@ -30,12 +31,14 @@ namespace Assets.Scripts.ObjectScripts
             input = new InputHandler();      
             levelCompleted = false;
             gameStart = false;
+			PartyEngage = false;
         }
         // Use this for initialization
         void Start ()
         {
             currentTile = CurrentRoom.StartingTile;
             moves = CurrentRoom.movesAllowed;
+			AkSoundEngine.PostEvent ("Play_Hover", gameObject);
         }
 	
         // Update is called once per frame
@@ -85,24 +88,41 @@ namespace Assets.Scripts.ObjectScripts
             {
                 case PlayerDirection.Left:
                     transform.rotation = Quaternion.Euler(0,-90,0);
+					AkSoundEngine.PostEvent ("Play_Move", gameObject);
                     break;
                 case PlayerDirection.Right:
                     transform.rotation = Quaternion.Euler(0, 90, 0);
+					AkSoundEngine.PostEvent ("Play_Move", gameObject);
                     break;
                 case PlayerDirection.Up:
                     transform.rotation = Quaternion.Euler(0, 0, 0);
+					AkSoundEngine.PostEvent ("Play_Move", gameObject);
                     break;
                 case PlayerDirection.Down:
                     transform.rotation = Quaternion.Euler(0, 180, 0);
+					AkSoundEngine.PostEvent ("Play_Move", gameObject);
                     break;
                 case PlayerDirection.Restart:
                     currentTile = CurrentRoom.StartingTile;
+					AkSoundEngine.PostEvent ("Play_Restart", gameObject);
                     restartRoom();
                     break;
                 case PlayerDirection.Party:
+					if (PartyEngage == false)
+					{
+						AkSoundEngine.PostEvent ("Play_PartyHorn", gameObject);
+						PartyEngage = true;
+						
+					}
+					else if (PartyEngage == true)
+					{
+						PartyEngage = false;
+						AkSoundEngine.PostEvent ("Set_State_Level1", gameObject);
+					}
+
                     foreach(Transform pt in partyFavors)
                     {
-                        pt.gameObject.SetActive(!(pt.gameObject.activeSelf));
+						pt.gameObject.SetActive(!(pt.gameObject.activeSelf));
                     }
                     break;
             }

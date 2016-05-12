@@ -11,6 +11,7 @@ namespace Assets.Scripts.ObjectScripts
         void Start()
         {
 
+
         }
 
         // Update is called once per frame
