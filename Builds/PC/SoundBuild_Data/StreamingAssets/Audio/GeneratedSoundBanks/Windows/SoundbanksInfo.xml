@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1962302600" Name="Play_Hover"/>
+				<Event Id="2993333241" Name="Play_HudZoomIn"/>
+				<Event Id="3151619640" Name="Play_HudZoomOut"/>
+				<Event Id="1387644124" Name="Play_LaserBeamHum"/>
+				<Event Id="1682718769" Name="Play_Move"/>
+				<Event Id="3093912374" Name="Play_MoveCount"/>
+				<Event Id="2932040671" Name="Play_Music"/>
+				<Event Id="3458574989" Name="Play_PartyHorn"/>
+				<Event Id="3483232275" Name="Play_Restart"/>
+				<Event Id="4038224090" Name="Play_Secret"/>
+				<Event Id="2425398770" Name="Play_StartButton"/>
+				<Event Id="1046622137" Name="Play_SwitchOff"/>
+				<Event Id="823015437" Name="Play_SwitchOn"/>
+				<Event Id="3785065891" Name="Play_Teleport"/>
+				<Event Id="2453267296" Name="Play_Victory"/>
+				<Event Id="2773202283" Name="Set_State_Level1"/>
+				<Event Id="2773202280" Name="Set_State_Level2"/>
+				<Event Id="2302270969" Name="Set_State_Menu"/>
+				<Event Id="4150306254" Name="Stop_LaserBeamHum"/>
+				<Event Id="2837384057" Name="Stop_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="6520853" Language="SFX">
+					<ShortName>Hover_01.wav</ShortName>
+					<Path>SFX\Hover_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="20397459" Language="SFX">
+					<ShortName>HudZoomIn_01.wav</ShortName>
+					<Path>SFX\HudZoomIn_01_15D0BD8E.wem</Path>
+				</File>
+				<File Id="102041694" Language="SFX">
+					<ShortName>Secret_02-03.wav</ShortName>
+					<Path>SFX\Secret_02-03_9E69E797.wem</Path>
+				</File>
+				<File Id="106871251" Language="SFX">
+					<ShortName>Pad1.wav</ShortName>
+					<Path>SFX\Pad1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="121321500" Language="SFX">
+					<ShortName>LaserBeamHum.wav</ShortName>
+					<Path>SFX\LaserBeamHum_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="210973081" Language="SFX">
+					<ShortName>Clock2_01.wav</ShortName>
+					<Path>SFX\Clock2_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="282989057" Language="SFX">
+					<ShortName>SwitchOff.wav</ShortName>
+					<Path>SFX\SwitchOff_9E69E797.wem</Path>
+				</File>
+				<File Id="401944971" Language="SFX">
+					<ShortName>VIctory_01.wav</ShortName>
+					<Path>SFX\VIctory_01_9E69E797.wem</Path>
+				</File>
+				<File Id="427665060" Language="SFX">
+					<ShortName>Restart_01-02.wav</ShortName>
+					<Path>SFX\Restart_01-02_9E69E797.wem</Path>
+				</File>
+				<File Id="431886803" Language="SFX">
+					<ShortName>PartyTheme_01.wav</ShortName>
+					<Path>SFX\PartyTheme_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="510263444" Language="SFX">
+					<ShortName>Move_01.wav</ShortName>
+					<Path>SFX\Move_01_9A3C66F6.wem</Path>
+				</File>
+				<File Id="518155773" Language="SFX">
+					<ShortName>StartButton.wav</ShortName>
+					<Path>SFX\StartButton_9E69E797.wem</Path>
+				</File>
+				<File Id="558557057" Language="SFX">
+					<ShortName>Pad2_01-01.wav</ShortName>
+					<Path>SFX\Pad2_01-01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="606934933" Language="SFX">
+					<ShortName>WallBump_01-02.wav</ShortName>
+					<Path>SFX\WallBump_01-02_9B87D3C4.wem</Path>
+				</File>
+				<File Id="613629662" Language="SFX">
+					<ShortName>Teleport_01.wav</ShortName>
+					<Path>SFX\Teleport_01_9E69E797.wem</Path>
+				</File>
+				<File Id="615581308" Language="SFX">
+					<ShortName>Rhythm2_01.wav</ShortName>
+					<Path>SFX\Rhythm2_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="623699193" Language="SFX">
+					<ShortName>HudZoomOut_01.wav</ShortName>
+					<Path>SFX\HudZoomOut_01_689A4302.wem</Path>
+				</File>
+				<File Id="625198036" Language="SFX">
+					<ShortName>Rhythm1.wav</ShortName>
+					<Path>SFX\Rhythm1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="629497652" Language="SFX">
+					<ShortName>PartyHorn_01.wav</ShortName>
+					<Path>SFX\PartyHorn_01_9E69E797.wem</Path>
+				</File>
+				<File Id="705276627" Language="SFX">
+					<ShortName>Switch_On.wav</ShortName>
+					<Path>SFX\Switch_On_9E69E797.wem</Path>
+				</File>
+				<File Id="776129159" Language="SFX">
+					<ShortName>Arp1_01.wav</ShortName>
+					<Path>SFX\Arp1_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="812017045" Language="SFX">
+					<ShortName>Arp2_01.wav</ShortName>
+					<Path>SFX\Arp2_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="957375022" Language="SFX">
+					<ShortName>Clock1_01.wav</ShortName>
+					<Path>SFX\Clock1_01_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

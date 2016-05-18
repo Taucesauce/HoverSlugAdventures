@@ -6,25 +6,25 @@ Direct3D:
     Vendor:   Intel
     VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.319 seconds
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.051 seconds
 desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures-master\Builds\PC\SoundBuild_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.dll (this message is harmless)
 The AnimationClip 'teleport_tutorial' used by the Animation component 'teleportTutorial' must be marked as Legacy.
  
 (Filename:  Line: 1901)
@@ -37,25 +37,17 @@ WwiseUnity: Initialize sound engine ...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-WwiseUnity: Could not locate the SoundBanks. Did you make sure to copy them to the StreamingAssets folder?
+WwiseUnity: Setting base SoundBank path to C:\Users\AliCedroni66\Documents\GitHub\HoverSlugAdventures\Builds\PC\SoundBuild_Data\StreamingAssets\Audio\GeneratedSoundBanks\Windows\
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-Wwise: Bank Main failed to load (AK_FileNotFound)
+WwiseUnity: Sound engine initialized.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 161c -> priority: 1 
+  Thread -> id: 32c -> priority: 1 
 Y Distance times 3: 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Just clicked!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-X Distance times 3: 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 

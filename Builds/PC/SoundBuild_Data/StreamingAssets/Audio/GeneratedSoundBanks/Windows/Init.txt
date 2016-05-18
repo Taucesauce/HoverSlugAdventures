@@ -1,0 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	4048174150	MusicType			\Default Work Unit\MusicType	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicType			
+	2607556080	Menu	MusicType			
+	2678230381	Level2	MusicType			
+	2678230382	Level1	MusicType			
+	3177314091	Party	MusicType			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
