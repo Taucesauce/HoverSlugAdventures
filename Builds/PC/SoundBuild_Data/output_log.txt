@@ -2,29 +2,29 @@ Initialize engine version: 5.1.2f1 (afd2369b692a)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 460  (ID=0xe24)
-    Vendor:   NVIDIA
-    VRAM:     978 MB
+    Renderer: Intel(R) HD Graphics 5000 (ID=0xa26)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.362 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.111 seconds
+desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\Managed\System.dll (this message is harmless)
 The AnimationClip 'teleport_tutorial' used by the Animation component 'teleportTutorial' must be marked as Legacy.
  
 (Filename:  Line: 1901)
@@ -37,7 +37,7 @@ WwiseUnity: Initialize sound engine ...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-WwiseUnity: Setting base SoundBank path to C:\Users\Patric Harmon\Desktop\HoverSlugAdventures\Builds\PC\SoundBuild_Data\StreamingAssets\Audio\GeneratedSoundBanks\Windows\
+WwiseUnity: Setting base SoundBank path to C:\Users\Justin\Documents\HoverSlugAdventures\Builds\PC\SoundBuild_Data\StreamingAssets\Audio\GeneratedSoundBanks\Windows\
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
@@ -45,24 +45,27 @@ WwiseUnity: Sound engine initialized.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 59c4 -> priority: 1 
-  Thread -> id: 59c0 -> priority: 1 
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 5290 -> priority: 1 
 Y Distance times 3: 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.279708 ms
+UnloadTime: 7.119881 ms
 
 Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 3996.
-Total: 1.086000 ms (FindLiveObjects: 0.210852 ms CreateObjectMapping: 0.053989 ms MarkObjects: 0.699316 ms  DeleteObjects: 0.115640 ms)
+Total: 1.685477 ms (FindLiveObjects: 0.373955 ms CreateObjectMapping: 0.085233 ms MarkObjects: 1.068316 ms  DeleteObjects: 0.151277 ms)
 
 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
@@ -77,10 +80,4 @@ Total: 1.086000 ms (FindLiveObjects: 0.210852 ms CreateObjectMapping: 0.053989 m
 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.788873 ms
-
-Unloading 348 unused Assets to reduce memory usage. Loaded Objects now: 431.
-Total: 0.730688 ms (FindLiveObjects: 0.056908 ms CreateObjectMapping: 0.040127 ms MarkObjects: 0.265572 ms  DeleteObjects: 0.366985 ms)
 
