@@ -1,0 +1,51 @@
+Event	ID	Name			Wwise Object Path	Notes
+	823015437	Play_SwitchOn			\Default Work Unit\Play_SwitchOn	
+	1046622137	Play_SwitchOff			\Default Work Unit\Play_SwitchOff	
+	1387644124	Play_LaserBeamHum			\Default Work Unit\Play_LaserBeamHum	
+	1682718769	Play_Move			\Default Work Unit\Play_Move	
+	1962302600	Play_Hover			\Default Work Unit\Play_Hover	
+	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
+	2425398770	Play_StartButton			\Default Work Unit\Play_StartButton	
+	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
+	2773202280	Set_State_Level2			\Default Work Unit\Set_State_Level2	
+	2773202283	Set_State_Level1			\Default Work Unit\Set_State_Level1	
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	2993333241	Play_HudZoomIn			\Default Work Unit\Play_HudZoomIn	
+	3093912374	Play_MoveCount			\Default Work Unit\Play_MoveCount	
+	3151619640	Play_HudZoomOut			\Default Work Unit\Play_HudZoomOut	
+	3458574989	Play_PartyHorn			\Default Work Unit\Play_PartyHorn	
+	3483232275	Play_Restart			\Default Work Unit\Play_Restart	
+	3785065891	Play_Teleport			\Default Work Unit\Play_Teleport	
+	4038224090	Play_Secret			\Default Work Unit\Play_Secret	
+	4150306254	Stop_LaserBeamHum			\Default Work Unit\Stop_LaserBeamHum	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	179104639	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\HudZoomOut\Silence\Wwise Silence	
+	980381512	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\HudZoomIn\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6520853	Hover	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Hover_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hover		1450048
+	20397459	HudZoomIn	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\HudZoomIn_01_15D0BD8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\HudZoomIn\HudZoomIn		196280
+	102041694	Secret	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Secret_02-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Secret		139340
+	106871251	Pad1	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Pad1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level1\Min1\Pad1		5558796
+	121321500	LaserBeamHum	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\LaserBeamHum_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserBeamHum		1234864
+	210973081	Clock2_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Clock2_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level2\MainPlus2\Clock2_01		5686828
+	282989057	SwitchOff	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\SwitchOff_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SwitchOff		36800
+	401944971	Victory	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\VIctory_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victory		177568
+	427665060	Restart	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Restart_01-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Restart		177152
+	431886803	PartyTheme_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\PartyTheme_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\PartyTheme\PartyTheme\PartyTheme_01		5889548
+	510263444	Move	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Move_01_9A3C66F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Move		37112
+	518155773	StartButton	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\StartButton_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\StartButton		60480
+	558557057	Pad2_01-01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Pad2_01-01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level2\Main2\Pad2_01-01		5459976
+	606934933	WallBump_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\WallBump_01-02_9B87D3C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\MoveCount\WallBump_01		20680
+	613629662	Teleport	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Teleport_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Teleport		165560
+	615581308	Rhythm2_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Rhythm2_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level2\Main2\Rhythm2_01		5516120
+	623699193	HudZoomOut	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\HudZoomOut_01_689A4302.wem		\Actor-Mixer Hierarchy\Default Work Unit\HudZoomOut\HudZoomOut		169408
+	625198036	Rhythm1	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Rhythm1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level1\Min1\Rhythm1		5804096
+	629497652	PartyHorn	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\PartyHorn_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PartyHorn		180544
+	705276627	SwitchOn	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Switch_On_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SwitchOn		37184
+	776129159	Arp1_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Arp1_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level1\Main1\Arp1_01		5804196
+	812017045	Arp2_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Arp2_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level2\Main2\Arp2_01		6134940
+	957375022	Clock1_01	C:\Users\AliCedroni66\Documents\GameProjects\HoverSlugAdventures-master\HoverSlugAdventures\HoverslugWwise\.cache\Windows\SFX\Clock1_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\HoverslugThemes\Level1\MinPlus1\Clock1_01		5804192
+
